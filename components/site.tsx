@@ -27,8 +27,30 @@ export function Nav() {
           PLUMB <span className="p">CRAZY</span>
         </a>
         <nav className="nav-links">
-          <a href="/#services">Services</a>
+          <div className="dd">
+            <a href="/#services" className="dd-top">
+              Services <span className="dd-caret">▾</span>
+            </a>
+            <div className="dd-menu">
+              <div className="dd-group">
+                <span className="dd-h cool-h">Air Conditioning</span>
+                <a href="/services/ac-installation">Installation</a>
+                <a href="/services/ac-repair">Repair</a>
+              </div>
+              <div className="dd-group">
+                <span className="dd-h warm-h">Heating</span>
+                <a href="/services/heating-installation">Installation</a>
+                <a href="/services/heating-repair">Repair</a>
+              </div>
+              <div className="dd-group">
+                <span className="dd-h brand-h">Air Quality</span>
+                <a href="/services/indoor-air-quality">Indoor Air Quality</a>
+              </div>
+            </div>
+          </div>
           <a href="/projects">Projects</a>
+          <a href="/specials">Specials</a>
+          <a href="/news">News</a>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
@@ -66,9 +88,18 @@ export function Footer() {
             <p className="foot-note">{LICENSE}</p>
           </div>
           <div>
+            <h4>Services</h4>
+            <a href="/services/ac-installation">AC Installation</a>
+            <a href="/services/ac-repair">AC Repair</a>
+            <a href="/services/heating-installation">Heating Installation</a>
+            <a href="/services/heating-repair">Heating Repair</a>
+            <a href="/services/indoor-air-quality">Indoor Air Quality</a>
+          </div>
+          <div>
             <h4>Site</h4>
-            <a href="/#services">Services</a>
             <a href="/projects">Projects</a>
+            <a href="/specials">Specials</a>
+            <a href="/news">News &amp; Tips</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
           </div>

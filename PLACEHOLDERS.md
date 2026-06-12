@@ -31,3 +31,8 @@ All placeholder values live at the **top of `app/page.tsx`** in one block, plus 
 - [ ] **Google Business Profile reviews link** → wire the "Read our reviews on Google" button + replace the 3 SAMPLE review cards with real ones
 - [ ] **About-page story** — founding year, owners, team, real history (current copy is a styled placeholder)
 - [ ] **Contact form wiring** → booking/CRM at launch (form UI is staged, submit disabled, phone CTA active)
+
+## Added 2026-06-12 (services/specials/news)
+- [ ] **Real coupon offers + terms** — /specials cards are layout placeholders
+- [ ] **Article content** — /news has 4 planned titles with excerpts; full posts written at launch (content-engine retainer deliverable)
+- [ ] **Service-page copy review** — client confirms claims (every-brand service, stocked trucks, etc.) on the 5 /services/* pages

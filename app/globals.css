@@ -581,7 +581,7 @@ footer {
 }
 .foot-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
   gap: 36px;
 }
 .foot-grid h4 {
@@ -613,6 +613,172 @@ footer {
   box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5);
 }
 .callbar .mono { font-family: var(--font-m); font-weight: 600; }
+
+/* ── nav dropdown (CSS-only) ─────────────────────────────── */
+
+.dd { position: relative; }
+.dd-top { display: inline-flex; align-items: center; gap: 5px; }
+.dd-caret { font-size: 10px; opacity: 0.6; }
+.dd-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: -22px;
+  display: none;
+  min-width: 460px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  padding: 22px 24px;
+  background: rgba(14, 12, 19, 0.97);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--plum);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+/* bridge the hover gap between trigger and menu */
+.dd::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+.dd:hover .dd-menu,
+.dd:focus-within .dd-menu { display: grid; }
+.dd-group { display: flex; flex-direction: column; gap: 2px; }
+.dd-h {
+  font-family: var(--font-m);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.cool-h { color: var(--ice); }
+.warm-h { color: var(--ember); }
+.brand-h { color: var(--plum-bright); }
+.dd-menu a {
+  font-size: 14.5px;
+  color: var(--bone-dim);
+  text-decoration: none;
+  padding: 6px 0;
+  white-space: nowrap;
+}
+.dd-menu a:hover { color: var(--bone); }
+
+/* ── service detail pages ────────────────────────────────── */
+
+.svc-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.check-list {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.check-list li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 15.5px;
+  color: var(--bone-dim);
+}
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--ice);
+  font-weight: 700;
+}
+.check-list.signs li::before {
+  content: "!";
+  color: var(--ember);
+  font-family: var(--font-m);
+}
+
+/* ── coupons ─────────────────────────────────────────────── */
+
+.coupon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.coupon {
+  position: relative;
+  border: 2px dashed rgba(236, 232, 225, 0.25);
+  border-radius: 12px;
+  padding: 34px 30px 30px;
+  background: linear-gradient(165deg, var(--steel) 0%, var(--void-2) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+.coupon.brand { border-color: rgba(160, 92, 232, 0.45); }
+.coupon.cool { border-color: rgba(108, 198, 242, 0.4); }
+.coupon.warm { border-color: rgba(240, 149, 77, 0.4); }
+.c-amount {
+  font-family: var(--font-d);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1;
+}
+.coupon.brand .c-amount { color: var(--plum-bright); }
+.coupon.cool .c-amount { color: var(--ice); }
+.coupon.warm .c-amount { color: var(--ember); }
+.c-title { font-family: var(--font-d); font-size: 20px; font-weight: 700; }
+.c-fine { font-size: 13px; color: var(--bone-faint); flex: 1; }
+.c-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.c-actions .btn { justify-content: center; padding: 13px 18px; font-size: 15px; }
+/* perforated coupon notches */
+.coupon::before,
+.c-edge {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--void);
+  top: 50%;
+}
+.coupon::before { left: -15px; transform: translateY(-50%); }
+.c-edge { right: -15px; transform: translateY(-50%); }
+
+/* ── news / posts ────────────────────────────────────────── */
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.post {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(23, 20, 29, 0.55);
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.post:hover { transform: translateY(-3px); border-color: rgba(160, 92, 232, 0.35); }
+.post h2 { font-size: 22px; margin: 4px 0 6px; }
+.post p { margin: 0 0 16px; font-size: 15px; color: var(--bone-dim); flex: 1; }
+.post-soon {
+  font-family: var(--font-m);
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  color: var(--plum-bright);
+  border: 1px solid rgba(160, 92, 232, 0.35);
+  border-radius: 99px;
+  padding: 6px 12px;
+  align-self: flex-start;
+}
 
 /* ── interior page hero ──────────────────────────────────── */
 
@@ -795,6 +961,10 @@ footer {
   .review-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .svc-detail-grid { grid-template-columns: 1fr; gap: 40px; }
+  .coupon-grid { grid-template-columns: 1fr; }
+  .post-grid { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
