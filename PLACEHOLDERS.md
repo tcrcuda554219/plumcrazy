@@ -24,3 +24,10 @@ All placeholder values live at the **top of `app/page.tsx`** in one block, plus 
 - [ ] Emergency/24-hour dedicated service page (SEO cluster) — phase 2
 - [ ] Exploded-view 3D section — phase 2
 - [ ] Instant-estimate flow (GHL-backed) — phase 2
+
+## Added 2026-06-12 (multi-page expansion)
+- [ ] **Real project photos** from the client (residential + commercial jobs) — `/projects` currently uses brand visuals as stand-ins
+- [ ] **Office address** → swap the generic Las Vegas map embed on `/contact` for the exact pin / GBP embed
+- [ ] **Google Business Profile reviews link** → wire the "Read our reviews on Google" button + replace the 3 SAMPLE review cards with real ones
+- [ ] **About-page story** — founding year, owners, team, real history (current copy is a styled placeholder)
+- [ ] **Contact form wiring** → booking/CRM at launch (form UI is staged, submit disabled, phone CTA active)

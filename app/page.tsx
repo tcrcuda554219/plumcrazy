@@ -1,14 +1,13 @@
-/* ════════════════════════════════════════════════════════════
-   PLACEHOLDERS — replace before production launch.
-   Every value the client must confirm lives in this block.
-   See PLACEHOLDERS.md for the full checklist.
-   ════════════════════════════════════════════════════════════ */
-const PHONE_DISPLAY = "(702) 600-1814"; // from the client's existing badge — CONFIRM this is the HVAC line
-const PHONE_TEL = "+17026001814"; // tel: target — confirm with client
-const LICENSE = "NV License #0000000"; // ← PLACEHOLDER license number
-const OFFER_HEADLINE = "$500 off a complete system install"; // ← PLACEHOLDER signature offer
-const OFFER_FINE = "Placeholder offer — final promotion, terms, and expiration set by Plumb Crazy."; // ← PLACEHOLDER
-const FINANCING_LINE = "Flexible financing available on qualifying systems."; // ← PLACEHOLDER financing partner
+import {
+  Nav,
+  Footer,
+  CallBar,
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  OFFER_HEADLINE,
+  OFFER_FINE,
+  FINANCING_LINE,
+} from "@/components/site";
 
 export default function Home() {
   return (
@@ -25,46 +24,13 @@ export default function Home() {
         <Offer />
         <Area />
         <hr className="seam" />
+        <Reviews />
         <Faq />
         <Final />
       </main>
       <Footer />
-      <a className="callbar" href={`tel:${PHONE_TEL}`}>
-        🚨 24/7 Emergency — Call <span className="mono">{PHONE_DISPLAY}</span>
-      </a>
+      <CallBar />
     </>
-  );
-}
-
-function Nav() {
-  return (
-    <header className="nav">
-      <div className="nav-in">
-        <a className="logo" href="#top">
-          <img
-            src="/plumb-crazy-badge.png"
-            alt="Plumb Crazy Heating & Cooling badge — Weimaraner holding a thermostat"
-            className="logo-badge"
-            width={46}
-            height={46}
-          />
-          PLUMB <span className="p">CRAZY</span>
-        </a>
-        <nav className="nav-links">
-          <a href="#services">Services</a>
-          <a href="#why">Why Us</a>
-          <a href="#process">Process</a>
-          <a href="#area">Service Area</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-        <a className="nav-phone" href={`tel:${PHONE_TEL}`}>
-          {PHONE_DISPLAY}
-        </a>
-        <a className="btn btn-plum" href="#contact">
-          Book Service
-        </a>
-      </div>
-    </header>
   );
 }
 
@@ -460,47 +426,48 @@ function Final() {
   );
 }
 
-function Footer() {
+function Reviews() {
+  const reviews = [
+    {
+      name: "Sample Review — M. R., Henderson",
+      text: "Our AC died on a Friday night in July. They answered at 11 p.m. and had a tech out the next morning. Honest about the fix, no upsell. (Sample — replaced with the client's real Google reviews at launch.)",
+    },
+    {
+      name: "Sample Review — D. T., Summerlin",
+      text: "Full system replacement, done in a day, house has never been this comfortable. The quote matched the invoice to the penny. (Sample — replaced with the client's real Google reviews at launch.)",
+    },
+    {
+      name: "Sample Review — Facilities Mgr., Las Vegas",
+      text: "They handle three of our commercial properties. Scheduled maintenance happens like clockwork and the RTU retrofit came in on budget. (Sample — replaced with the client's real Google reviews at launch.)",
+    },
+  ];
   return (
-    <footer>
+    <section className="reviews" id="reviews">
       <div className="wrap">
-        <div className="foot-grid">
-          <div>
-            <a className="logo" href="#top">
-              <img
-                src="/plumb-crazy-badge.png"
-                alt="Plumb Crazy Heating & Cooling badge"
-                className="logo-badge logo-badge-lg"
-                width={72}
-                height={72}
-              />
-              PLUMB <span className="p">CRAZY</span>
-            </a>
-            <p style={{ marginTop: 14, maxWidth: "38ch" }}>
-              Full-service heating and cooling for the Las Vegas valley.
-              Residential. Commercial. 24-hour emergency service.
-            </p>
-            <p className="foot-note">{LICENSE}</p>
-          </div>
-          <div>
-            <h4>Site</h4>
-            <a href="#services">Services</a>
-            <a href="#why">Why Us</a>
-            <a href="#process">Process</a>
-            <a href="#faq">FAQ</a>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <a href={`tel:${PHONE_TEL}`}>{PHONE_DISPLAY}</a>
-            <a href="#contact">Book Service</a>
-            <a href="#contact">Commercial Bids</a>
-          </div>
+        <span className="tag brand">
+          <span className="deg">GOOGLE REVIEWS</span>
+        </span>
+        <h2>
+          The valley <em>vouches.</em>
+        </h2>
+        <div className="review-grid">
+          {reviews.map((r) => (
+            <figure className="review" key={r.name}>
+              <div className="stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <blockquote>{r.text}</blockquote>
+              <figcaption>{r.name}</figcaption>
+            </figure>
+          ))}
         </div>
-        <p className="foot-note">
-          © {new Date().getFullYear()} Plumb Crazy Heating &amp; Cooling · Las
-          Vegas, NV · Address placeholder — confirm with client. · Site by 7LSM
-        </p>
+        <div className="review-cta">
+          {/* PLACEHOLDER: link to the client's Google Business Profile reviews */}
+          <a className="btn btn-ghost" href="#" aria-disabled="true">
+            Read our reviews on Google → (link added at launch)
+          </a>
+        </div>
       </div>
-    </footer>
+    </section>
   );
 }
