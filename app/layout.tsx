@@ -21,7 +21,7 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Plum Crazy HVAC — Heating. Cooling. Built Complete. | Las Vegas",
+  title: "Plumb Crazy Heating & Cooling — Built Complete. | Las Vegas",
   description:
     "Full-service HVAC for Las Vegas — residential and commercial. Complete system builds, AC repair, heating, and a 24-hour emergency service department. One shop, the complete system.",
   // STAGING: keep out of search indexes until production launch on the final domain.

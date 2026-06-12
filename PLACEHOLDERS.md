@@ -1,9 +1,9 @@
-# Plum Crazy — placeholders to resolve before production launch
+# Plumb Crazy — placeholders to resolve before production launch
 
 All placeholder values live at the **top of `app/page.tsx`** in one block, plus the items below. This is the client sign-off checklist.
 
 ## From the client
-- [ ] **Phone number** (`PHONE_DISPLAY` / `PHONE_TEL`) — currently (702) 555-0123
+- [ ] **Phone number** (`PHONE_DISPLAY` / `PHONE_TEL`) — (702) 600-1814 pulled from their existing badge — CONFIRM it is the right line for the HVAC brand
 - [ ] **Business address** (footer note) + whether they want it published (SAB vs storefront)
 - [ ] **NV contractor license number** (`LICENSE`)
 - [ ] **Signature offer** (`OFFER_HEADLINE` / `OFFER_FINE`) — currently "$500 off a complete system install" as a sample

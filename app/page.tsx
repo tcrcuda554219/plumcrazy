@@ -3,11 +3,11 @@
    Every value the client must confirm lives in this block.
    See PLACEHOLDERS.md for the full checklist.
    ════════════════════════════════════════════════════════════ */
-const PHONE_DISPLAY = "(702) 555-0123"; // ← PLACEHOLDER client phone
-const PHONE_TEL = "+17025550123"; // ← PLACEHOLDER tel: target
+const PHONE_DISPLAY = "(702) 600-1814"; // from the client's existing badge — CONFIRM this is the HVAC line
+const PHONE_TEL = "+17026001814"; // tel: target — confirm with client
 const LICENSE = "NV License #0000000"; // ← PLACEHOLDER license number
 const OFFER_HEADLINE = "$500 off a complete system install"; // ← PLACEHOLDER signature offer
-const OFFER_FINE = "Placeholder offer — final promotion, terms, and expiration set by Plum Crazy."; // ← PLACEHOLDER
+const OFFER_FINE = "Placeholder offer — final promotion, terms, and expiration set by Plumb Crazy."; // ← PLACEHOLDER
 const FINANCING_LINE = "Flexible financing available on qualifying systems."; // ← PLACEHOLDER financing partner
 
 export default function Home() {
@@ -41,7 +41,14 @@ function Nav() {
     <header className="nav">
       <div className="nav-in">
         <a className="logo" href="#top">
-          PLUM <span className="p">CRAZY</span>
+          <img
+            src="/plumb-crazy-badge.png"
+            alt="Plumb Crazy Heating & Cooling badge — Weimaraner holding a thermostat"
+            className="logo-badge"
+            width={46}
+            height={46}
+          />
+          PLUMB <span className="p">CRAZY</span>
         </a>
         <nav className="nav-links">
           <a href="#services">Services</a>
@@ -249,7 +256,7 @@ function Why() {
     <section id="why">
       <div className="wrap">
         <span className="tag warm">
-          <span className="deg">WHY PLUM CRAZY</span>
+          <span className="deg">WHY PLUMB CRAZY</span>
         </span>
         <h2>
           The shop other shops <em>call.</em>
@@ -460,7 +467,14 @@ function Footer() {
         <div className="foot-grid">
           <div>
             <a className="logo" href="#top">
-              PLUM <span className="p">CRAZY</span>
+              <img
+                src="/plumb-crazy-badge.png"
+                alt="Plumb Crazy Heating & Cooling badge"
+                className="logo-badge logo-badge-lg"
+                width={72}
+                height={72}
+              />
+              PLUMB <span className="p">CRAZY</span>
             </a>
             <p style={{ marginTop: 14, maxWidth: "38ch" }}>
               Full-service heating and cooling for the Las Vegas valley.
@@ -483,8 +497,8 @@ function Footer() {
           </div>
         </div>
         <p className="foot-note">
-          © {new Date().getFullYear()} Plum Crazy HVAC · Las Vegas, NV ·
-          Address placeholder — confirm with client. · Site by 7LSM
+          © {new Date().getFullYear()} Plumb Crazy Heating &amp; Cooling · Las
+          Vegas, NV · Address placeholder — confirm with client. · Site by 7LSM
         </p>
       </div>
     </footer>
