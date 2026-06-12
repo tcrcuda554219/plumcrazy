@@ -189,11 +189,12 @@ h2 .ember { color: var(--ember); }
   box-shadow: 0 0 0 1px rgba(236, 232, 225, 0.14), 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 .logo-badge-lg { width: 72px; height: 72px; }
-.nav-links { display: flex; gap: 26px; }
+.nav-links { display: flex; gap: 28px; align-items: center; }
 .nav-links a {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--bone-dim);
+  font-size: 17.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: rgba(236, 232, 225, 0.82);
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -658,7 +659,8 @@ footer {
 .warm-h { color: var(--ember); }
 .brand-h { color: var(--plum-bright); }
 .dd-menu a {
-  font-size: 14.5px;
+  font-size: 15.5px;
+  font-weight: 600;
   color: var(--bone-dim);
   text-decoration: none;
   padding: 6px 0;
