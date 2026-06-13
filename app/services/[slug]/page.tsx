@@ -8,6 +8,7 @@ import {
   PHONE_TEL,
 } from "@/components/site";
 import { services, getService } from "@/lib/services";
+import TanklessExploded from "@/components/tankless-exploded";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -92,6 +93,8 @@ export default async function ServicePage({
             </div>
           </div>
         </section>
+
+        {svc.slug === "water-heaters" && <TanklessExploded />}
 
         <section className="offer">
           <div className="offer-in">
