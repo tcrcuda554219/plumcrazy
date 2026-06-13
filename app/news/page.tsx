@@ -2,41 +2,41 @@ import type { Metadata } from "next";
 import { Nav, Footer, CallBar } from "@/components/site";
 
 export const metadata: Metadata = {
-  title: "News & Tips | Plumb Crazy Heating & Cooling — Las Vegas",
+  title: "News & Tips | Plumb Crazy Plumbing — Las Vegas",
   description:
-    "HVAC tips, upgrade guides, and straight answers from a Las Vegas heating and cooling shop — when to repair, when to replace, and what modern systems are worth.",
+    "Plumbing tips, upgrade guides, and straight answers from a Las Vegas plumbing shop — when to repair vs. replace a water heater, why Vegas water is so hard, and how to spot a hidden leak.",
 };
 
 /* PLACEHOLDER ARTICLES — these become the real content engine post-launch.
    Titles are the actual planned articles; bodies written at launch. */
 const posts = [
   {
-    k: "UPGRADES",
+    k: "WATER HEATERS",
     temp: "cool",
-    title: "Is it time to replace your AC? The honest 5-point checklist",
+    title: "Repair or replace your water heater? The honest 5-point checklist",
     excerpt:
-      "Age, refrigerant, repair frequency, power bills, and the one-third rule — how to know when repair money becomes wasted money.",
+      "Age, rust, rumbling, leaks, and the running-out-faster test — how to know when repair money becomes wasted money, and when a tankless upgrade pays off.",
   },
   {
-    k: "MODERN HVAC",
+    k: "VEGAS WATER",
     temp: "both",
-    title: "What modern systems actually get you (and what's just marketing)",
+    title: "Why Las Vegas water destroys your fixtures (and what fixes it)",
     excerpt:
-      "Variable-speed compressors, smart thermostats, heat pumps in the desert — which upgrades pay for themselves in a Vegas climate.",
+      "Some of the hardest water in the country is scaling your faucets and shortening every appliance's life. Softeners, filtration, and RO — what's worth it and what isn't.",
   },
   {
     k: "WARNING SIGNS",
     temp: "warm",
-    title: "5 furnace warning signs you shouldn't sleep on",
+    title: "5 hidden-leak warning signs you shouldn't sleep on",
     excerpt:
-      "Yellow flames, short cycling, mystery smells — the symptoms that mean 'call tonight' versus the ones that can wait until morning.",
+      "A water bill that jumped, the sound of running water with everything off, a warm spot on the floor — the symptoms that mean 'call today' versus the ones that can wait.",
   },
   {
-    k: "SEASONAL",
+    k: "DRAINS",
     temp: "cool",
-    title: "Getting your AC ready for a Vegas summer — the pro checklist",
+    title: "Snaking vs. hydro-jetting: which one your drain actually needs",
     excerpt:
-      "What we actually do on a tune-up, what you can do yourself, and why May is the month that decides your July.",
+      "Cabling clears the clog; jetting scours the pipe. When a quick snake is enough, when roots and grease demand a jetter, and why the cheap fix keeps coming back.",
   },
 ];
 

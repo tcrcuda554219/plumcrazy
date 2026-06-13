@@ -21,9 +21,9 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Plumb Crazy Heating & Cooling — Built Complete. | Las Vegas",
+  title: "Plumb Crazy Plumbing — Leaks. Clogs. Handled. | Las Vegas",
   description:
-    "Full-service HVAC for Las Vegas — residential and commercial. Complete system builds, AC repair, heating, and a 24-hour emergency service department. One shop, the complete system.",
+    "Full-service plumbing for Las Vegas — residential and commercial. Drain cleaning, hydro-jetting, sewer repair, water heaters, leak detection, repiping, and water treatment, with a 24-hour emergency service department.",
   // STAGING: keep out of search indexes until production launch on the final domain.
   robots: { index: false, follow: false },
 };

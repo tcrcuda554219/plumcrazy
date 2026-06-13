@@ -9,31 +9,49 @@ import {
 } from "@/components/site";
 
 export const metadata: Metadata = {
-  title: "Specials & Coupons | Plumb Crazy Heating & Cooling — Las Vegas",
+  title: "Specials & Coupons | Plumb Crazy Plumbing — Las Vegas",
   description:
-    "Current specials, coupons, and seasonal offers on AC repair, heating service, tune-ups, and complete system installs in Las Vegas.",
+    "Current plumbing specials and coupons in Las Vegas — drain cleaning, free sewer camera inspection, water heater and repipe savings, plus senior and military discounts.",
 };
 
 /* PLACEHOLDER COUPONS — final offers, amounts, and terms set by the client.
    These demonstrate the layout for sign-off. */
 const coupons = [
   {
-    amount: "$500 OFF",
-    title: "Complete system install",
-    fine: "Placeholder offer — terms and expiration set by Plumb Crazy.",
-    temp: "brand",
-  },
-  {
-    amount: "$49",
-    title: "Seasonal tune-up special",
-    fine: "Placeholder offer — keep the system at spec before the season hits.",
+    amount: "$59",
+    title: "Drain cleaning — any single drain",
+    fine: "Placeholder offer — accessible cleanout required. Terms and expiration set by Plumb Crazy.",
     temp: "cool",
   },
   {
     amount: "FREE",
-    title: "Second opinion on any quoted repair",
-    fine: "Placeholder offer — bring us the other guy's quote.",
+    title: "Sewer camera inspection with main-line cleaning",
+    fine: "Placeholder offer — see the problem before you pay to fix it. With any main-line drain cleaning.",
     temp: "warm",
+  },
+  {
+    amount: "$200 OFF",
+    title: "Tankless water heater installation",
+    fine: "Placeholder offer — on qualifying tankless installs. Ask about financing.",
+    temp: "brand",
+  },
+  {
+    amount: "10% OFF",
+    title: "Senior & military discount",
+    fine: "Placeholder offer — our thanks. One per household; can't combine with other offers.",
+    temp: "cool",
+  },
+  {
+    amount: "$50 OFF",
+    title: "Any plumbing repair over $500",
+    fine: "Placeholder offer — applied to repairs of $500 or more before tax.",
+    temp: "warm",
+  },
+  {
+    amount: "FREE",
+    title: "Second opinion on any quoted repair",
+    fine: "Placeholder offer — bring us the other plumber's quote.",
+    temp: "brand",
   },
 ];
 
@@ -51,8 +69,9 @@ export default function Specials() {
               Crazy good <em className="page-em">deals.</em>
             </h1>
             <p className="lede">
-              Current offers on service, tune-ups, and complete installs.
-              Mention the coupon when you book — that&apos;s the whole trick.
+              Current offers on drain cleaning, sewer work, water heaters, and
+              repipes. Mention the coupon when you book — that&apos;s the whole
+              trick.
             </p>
           </div>
         </section>

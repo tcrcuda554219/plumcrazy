@@ -51,22 +51,22 @@ function Hero() {
       <div className="wrap">
         <span className="badge-247">
           <span className="dot" />
-          24-Hour Emergency Service · Las Vegas
+          24-Hour Emergency Plumbing · Las Vegas
         </span>
         <h1>
-          <span className="heat">Heating.</span>{" "}
-          <span className="cool">Cooling.</span>
+          <span className="cool">Leaks.</span>{" "}
+          <span className="heat">Clogs.</span>
           <br />
-          <span className="plum">Built complete.</span>
+          <span className="plum">Handled.</span>
         </h1>
         <p className="sub">
-          Residential and commercial HVAC for the Las Vegas valley — designed,
-          installed, and maintained by one full-service shop. From a single
-          repair to a complete ground-up system build. Day or night.
+          Residential and commercial plumbing for the Las Vegas valley — drains,
+          sewers, water heaters, leaks, and repipes. From a midnight burst pipe
+          to a whole-home repipe, one licensed shop does it all. Day or night.
         </p>
         <div className="hero-ctas">
           <a className="btn btn-plum" href="#contact">
-            Book Service
+            Book a Plumber
           </a>
           <a className="btn btn-ghost" href="#contact">
             Request a Commercial Bid
@@ -88,28 +88,28 @@ function Lanes() {
           <span className="deg">// CHOOSE YOUR LANE</span>
         </span>
         <h2>
-          One shop. <em>Every system.</em>
+          One shop. <em>Every pipe.</em>
         </h2>
         <div className="lane-grid">
           <div className="lane cool">
-            <span className="mono-k">RESIDENTIAL · 68°F</span>
+            <span className="mono-k">RESIDENTIAL · WHOLE-HOME</span>
             <h3>Your home, handled</h3>
             <p>
-              AC repair and replacement, heating, full system installs, and
-              maintenance plans that catch failures before July does. Sized
-              right for your house — not guessed.
+              Drain cleaning, water heaters, leak detection, repipes, fixtures,
+              and water treatment — everything from a dripping faucet to a
+              whole-home repipe, done by licensed plumbers.
             </p>
             <a className="go" href="#contact">
               Book home service →
             </a>
           </div>
           <div className="lane warm">
-            <span className="mono-k">COMMERCIAL · BUILT TO SPEC</span>
-            <h3>Your building, on schedule</h3>
+            <span className="mono-k">COMMERCIAL · BID TO BACKFLOW</span>
+            <h3>Your building, flowing</h3>
             <p>
-              Rooftop units, complete build-outs, retrofits, and service
-              contracts for commercial properties across the valley. Bid it
-              once, built right.
+              Commercial drain and sewer service, grease lines, backflow,
+              tenant build-outs, and service contracts for properties across the
+              valley. Documented, scheduled, dependable.
             </p>
             <a className="go" href="#contact">
               Request a bid →
@@ -117,10 +117,11 @@ function Lanes() {
           </div>
           <div className="lane brand">
             <span className="mono-k">EMERGENCY · 24/7/365</span>
-            <h3>Dead system at 2 a.m.?</h3>
+            <h3>Burst pipe at 2 a.m.?</h3>
             <p>
-              Our service department runs around the clock — because Vegas heat
-              doesn&apos;t keep business hours. Call now and talk to a human.
+              Water everywhere or sewage backing up doesn&apos;t wait for
+              business hours — and neither do we. Our service department runs
+              around the clock. Call now and talk to a human.
             </p>
             <a className="go" href={`tel:${PHONE_TEL}`}>
               Call {PHONE_DISPLAY} →
@@ -136,39 +137,39 @@ function Services() {
   const items = [
     {
       temp: "cool",
-      k: "COOLING",
-      t: "AC Repair & Replacement",
-      d: "Every brand, every age of system. Honest diagnosis — repair when it makes sense, replace when it saves you money.",
+      k: "DRAINS",
+      t: "Drain Cleaning & Hydro-Jetting",
+      d: "Snaked for the quick clogs, hydro-jetted when the pipe needs scouring back to bare wall. We clear it and confirm it's clear.",
     },
     {
       temp: "warm",
-      k: "HEATING",
-      t: "Heating & Furnaces",
-      d: "Desert nights get cold. Furnace and heat-pump service, repair, and full installs that keep winter outside.",
-    },
-    {
-      temp: "both",
-      k: "COMPLETE BUILDS",
-      t: "Full System Installation",
-      d: "Ground-up HVAC for new construction and gut renovations — residential and commercial. Designed, ducted, and delivered complete.",
+      k: "SEWERS",
+      t: "Sewer Repair & Camera Inspection",
+      d: "We camera the line so you see the break, then fix it — including trenchless repairs that skip tearing up the yard.",
     },
     {
       temp: "cool",
-      k: "COMMERCIAL",
-      t: "Rooftop Units & Build-Outs",
-      d: "RTU install and service, tenant improvements, and retrofits — engineered for the building, not the brochure.",
+      k: "WATER HEATERS",
+      t: "Tank & Tankless",
+      d: "Repair every brand, swap failing tanks the same day, and install tankless systems sized to keep the whole house in hot water.",
     },
     {
       temp: "warm",
-      k: "PREVENTION",
-      t: "Maintenance Plans",
-      d: "Seasonal tune-ups, priority scheduling, and the small fixes that prevent the big invoices.",
+      k: "LEAKS",
+      t: "Leak Detection & Slab Leaks",
+      d: "Electronic location for hidden and under-slab leaks — common in Vegas — pinpointed and repaired with the least demolition possible.",
     },
     {
       temp: "both",
-      k: "AIR",
-      t: "Indoor Air Quality",
-      d: "Filtration, purification, and duct sealing — for air you can feel the difference in.",
+      k: "REPIPING",
+      t: "Repiping & Pipe Repair",
+      d: "Rusted galvanized or pinhole-leaking copper? Whole-home repipes and spot repairs in PEX or copper — permitted, tested, and clean.",
+    },
+    {
+      temp: "both",
+      k: "WATER QUALITY",
+      t: "Softeners & Filtration",
+      d: "Vegas water is brutally hard. Softeners, whole-home filtration, and RO that protect your fixtures, appliances, skin, and hair.",
     },
   ];
   return (
@@ -178,8 +179,8 @@ function Services() {
           <span className="deg">SERVICES · FULL STACK</span>
         </span>
         <h2>
-          Everything between the <span className="ember">thermostat</span> and
-          the <span className="ice">rooftop.</span>
+          Everything between the <span className="ice">water main</span> and the{" "}
+          <span className="ember">sewer line.</span>
         </h2>
         <div className="svc-grid">
           {items.map((s) => (
@@ -200,22 +201,22 @@ function Why() {
     {
       n: "01",
       t: "24-hour service department",
-      d: "Not an answering service — a real dispatch that runs all night, every night.",
+      d: "Not an answering service — a real dispatch that runs all night, every night. Burst pipes and backups don't keep business hours.",
     },
     {
       n: "02",
-      t: "Residential and commercial",
-      d: "One shop that builds homes comfortable and keeps businesses running. Both, completely.",
+      t: "Up-front, flat-rate pricing",
+      d: "You approve the price before we turn a wrench. No hourly meter running, no surprise number at the end of the job.",
     },
     {
       n: "03",
-      t: "Complete builds, not just fixes",
-      d: "We design and install entire systems from scratch — most shops only service what someone else built.",
+      t: "Residential and commercial",
+      d: "One licensed shop that keeps homes dry and businesses open — drains, sewers, heaters, and repipes, both sides of the meter.",
     },
     {
       n: "04",
-      t: "Straight answers",
-      d: "Honest diagnosis, written quotes, and no commission-chasing upsells. Vegas runs on reputation.",
+      t: "Licensed, bonded & insured",
+      d: "Real Nevada-licensed plumbers, fully bonded and insured. Honest diagnosis and written quotes. Vegas runs on reputation.",
     },
   ];
   return (
@@ -225,7 +226,7 @@ function Why() {
           <span className="deg">WHY PLUMB CRAZY</span>
         </span>
         <h2>
-          The shop other shops <em>call.</em>
+          The plumber the valley <em>trusts.</em>
         </h2>
         <div className="why-grid">
           {items.map((w) => (
@@ -246,22 +247,22 @@ function Process() {
     {
       n: "1",
       t: "Call or book",
-      d: "Tell us what's happening — dead AC, new build, commercial bid. Real human, day or night.",
+      d: "Tell us what's happening — clogged main, dead water heater, burst pipe, commercial bid. Real human, day or night.",
     },
     {
       n: "2",
       t: "Diagnose & quote",
-      d: "We inspect, measure, and size the actual job. You get a written quote with straight numbers — no mystery line items.",
+      d: "We camera the line or locate the leak, then hand you a flat-rate written quote before any work starts. No hourly meter, no mystery line items.",
     },
     {
       n: "3",
-      t: "Built complete",
-      d: "Our own techs do the work — install, duct, wire, commission. We don't sub out the parts that matter.",
+      t: "Fixed right",
+      d: "Our own licensed plumbers do the work — jetted, repiped, installed, and tested. We don't sub out the parts that matter.",
     },
     {
       n: "4",
-      t: "Maintained for life",
-      d: "Seasonal maintenance keeps the system at spec and the warranty intact. We catch failures before they cost you.",
+      t: "Backed & guaranteed",
+      d: "Workmanship warranty on the repair, plus maintenance options that catch the next problem early. We stand behind the work.",
     },
   ];
   return (
@@ -271,7 +272,7 @@ function Process() {
           <span className="deg">HOW IT WORKS</span>
         </span>
         <h2>
-          From first call to <em>cold air.</em>
+          From first call to <em>clear drain.</em>
         </h2>
         <div className="steps">
           {steps.map((s) => (
@@ -334,7 +335,7 @@ function Area() {
           The whole valley, <span className="ice">covered.</span>
         </h2>
         <p className="lede">
-          Residential and commercial service across the Las Vegas metro — and
+          Residential and commercial plumbing across the Las Vegas metro — and
           24-hour emergency dispatch to all of it.
         </p>
         <ul className="area-list">
@@ -351,27 +352,27 @@ function Faq() {
   const faqs = [
     {
       q: "Do you really answer at 2 a.m.?",
-      a: "Yes. Our service department runs 24/7/365 — Vegas heat doesn't keep business hours and neither do we. Emergency calls get a live response and real dispatch, day or night.",
+      a: "Yes. Our service department runs 24/7/365 — a burst pipe or a sewage backup doesn't keep business hours and neither do we. Emergency calls get a live response and real dispatch, day or night.",
+    },
+    {
+      q: "How does your pricing work?",
+      a: "Flat-rate, approved up front. We diagnose the job, hand you a written price before any work starts, and that's the price — no hourly meter running while we work and no surprise number at the end.",
+    },
+    {
+      q: "Can you fix a sewer line without digging up my whole yard?",
+      a: "Often, yes. We camera and locate the line first, then use trenchless methods — pipe lining or pipe bursting — wherever the line allows, which means minimal digging. When a dig is unavoidable, locating means we open the smallest area possible.",
     },
     {
       q: "Do you handle both residential and commercial work?",
-      a: "Both, completely. Home AC and heating on one side; rooftop units, build-outs, and service contracts on the other. Same shop, same standards, two specialized crews.",
+      a: "Both, completely. Homes on one side — drains, water heaters, leaks, repipes; commercial on the other — drain and sewer service, grease lines, backflow, build-outs, and service contracts. Same shop, same standards.",
     },
     {
-      q: "Can you build a complete system from scratch?",
-      a: "That's our specialty. New construction, gut renovations, and full replacements — we design, size, duct, install, and commission entire systems rather than just servicing what's already there.",
-    },
-    {
-      q: "How fast can you get someone out?",
-      a: "Emergencies get dispatched around the clock. Standard service is typically scheduled within days, not weeks — and maintenance-plan members get priority scheduling.",
+      q: "My water heater is leaking — repair or replace?",
+      a: "We'll give you the straight math, not a sales pitch. If it's a valve or a connection, we repair it. If the tank itself is leaking or it's well past its years, replacement is the smarter spend — and we can usually swap a standard tank the same day.",
     },
     {
       q: "Do you offer financing?",
-      a: "Yes — flexible financing is available on qualifying system installs and replacements. Ask when you book and we'll walk you through the options. (Details finalized with your quote.)",
-    },
-    {
-      q: "Which brands do you service?",
-      a: "All of them. We repair and maintain every major brand and age of equipment, and we'll give you a straight answer about whether repair or replacement is the smarter spend.",
+      a: "Yes — flexible financing is available on bigger jobs like water heaters, repipes, and sewer work. Ask when you book and we'll walk you through the options. (Details finalized with your quote.)",
     },
   ];
   return (
@@ -404,11 +405,11 @@ function Final() {
           <span className="deg">READY WHEN YOU ARE</span>
         </span>
         <h2>
-          Heating. Cooling. <em>Built complete.</em>
+          Leaks. Clogs. <em>Handled.</em>
         </h2>
         <p className="lede">
-          Book a service visit, request a commercial bid, or just call and talk
-          to a human — 24 hours a day.
+          Book a plumber, request a commercial bid, or just call and talk to a
+          human — 24 hours a day.
         </p>
         <div className="hero-ctas">
           <a className="btn btn-plum" href={`tel:${PHONE_TEL}`}>
@@ -430,15 +431,15 @@ function Reviews() {
   const reviews = [
     {
       name: "Sample Review — M. R., Henderson",
-      text: "Our AC died on a Friday night in July. They answered at 11 p.m. and had a tech out the next morning. Honest about the fix, no upsell. (Sample — replaced with the client's real Google reviews at launch.)",
+      text: "Main line backed up on a Sunday — sewage coming up the shower drain. They jetted it that afternoon and put a camera down to show me the root intrusion. Honest, fast, no upsell. (Sample — replaced with the client's real Google reviews at launch.)",
     },
     {
       name: "Sample Review — D. T., Summerlin",
-      text: "Full system replacement, done in a day, house has never been this comfortable. The quote matched the invoice to the penny. (Sample — replaced with the client's real Google reviews at launch.)",
+      text: "Tankless water heater install, done in a day, and the quote matched the invoice to the penny. House has endless hot water now. (Sample — replaced with the client's real Google reviews at launch.)",
     },
     {
       name: "Sample Review — Facilities Mgr., Las Vegas",
-      text: "They handle three of our commercial properties. Scheduled maintenance happens like clockwork and the RTU retrofit came in on budget. (Sample — replaced with the client's real Google reviews at launch.)",
+      text: "They handle the drains and backflow on three of our commercial properties. Scheduled like clockwork, documented every visit, never a surprise. (Sample — replaced with the client's real Google reviews at launch.)",
     },
   ];
   return (

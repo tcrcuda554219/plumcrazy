@@ -1,9 +1,11 @@
 /* ─────────────────────────────────────────────────────────────
    PLUMB CRAZY — design system
    "Machined luxury": near-black showroom, metal grays, and a
-   three-temperature light system:
-     ice  (cooling) · ember (heating) · plum (the brand — born
-   where hot meets cold).
+   three-channel accent system (class names kept from the original
+   build; meaning repurposed for plumbing):
+     ice/cool  → clean & supply water (blue)
+     ember/warm → drain, hot, & copper (amber)
+     plum/both → the brand (where the two lines meet)
    ───────────────────────────────────────────────────────────── */
 
 :root {
@@ -69,7 +71,7 @@ img, video { max-width: 100%; display: block; }
 
 section { position: relative; padding: 110px 0; }
 
-/* mono "thermostat tag" that labels every section */
+/* mono "spec tag" that labels every section */
 .tag {
   display: inline-flex;
   align-items: center;

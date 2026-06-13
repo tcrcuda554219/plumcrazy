@@ -3,7 +3,7 @@
 All placeholder values live at the **top of `app/page.tsx`** in one block, plus the items below. This is the client sign-off checklist.
 
 ## From the client
-- [ ] **Phone number** (`PHONE_DISPLAY` / `PHONE_TEL`) — (702) 600-1814 pulled from their existing badge — CONFIRM it is the right line for the HVAC brand
+- [ ] **Phone number** (`PHONE_DISPLAY` / `PHONE_TEL`) — (702) 600-1814 pulled from their existing badge — CONFIRM it is the right line for the plumbing brand
 - [ ] **Business address** (footer note) + whether they want it published (SAB vs storefront)
 - [ ] **NV contractor license number** (`LICENSE`)
 - [ ] **Signature offer** (`OFFER_HEADLINE` / `OFFER_FINE`) — currently "$500 off a complete system install" as a sample
@@ -16,7 +16,7 @@ All placeholder values live at the **top of `app/page.tsx`** in one block, plus 
 ## Production-launch tasks (7LSM)
 - [ ] Flip `robots: { index: false }` → indexable in `app/layout.tsx` (CURRENTLY NOINDEX FOR STAGING)
 - [ ] Final domain + canonical + og:image (use the ignited hero still, 1200×630)
-- [ ] JSON-LD schema: LocalBusiness/HVACBusiness + Service + FAQPage + OpeningHoursSpecification (24/7) — with REAL NAP only
+- [ ] JSON-LD schema: LocalBusiness/**Plumber** + Service + FAQPage + OpeningHoursSpecification (24/7) — with REAL NAP only
 - [ ] sitemap.ts + GSC submission
 - [ ] Wire CTAs to GHL booking/forms (currently anchor/tel placeholders)
 - [ ] GA4 + conversion events per the 7LSM playbook
@@ -31,6 +31,13 @@ All placeholder values live at the **top of `app/page.tsx`** in one block, plus 
 - [ ] **Google Business Profile reviews link** → wire the "Read our reviews on Google" button + replace the 3 SAMPLE review cards with real ones
 - [ ] **About-page story** — founding year, owners, team, real history (current copy is a styled placeholder)
 - [ ] **Contact form wiring** → booking/CRM at launch (form UI is staged, submit disabled, phone CTA active)
+
+## Added 2026-06-13 (HVAC → PLUMBING pivot)
+- [ ] **Badge art** — `/plumb-crazy-badge.png` shows the Weimaraner holding a *thermostat*; regenerate holding a pipe wrench / pipe so the mascot reads plumbing (alt text already updated to neutral "mascot")
+- [ ] **Hero video** — `/plum-crazy-hero-web.mp4` + poster are HVAC visuals; regenerate a plumbing hero (water / pipe / jetting / leak imagery). Until then the existing loop stands in
+- [ ] **Project photos are HVAC stand-ins** — `/projects/*.jpg` show a condenser, RTU, ductwork; captions are now plumbing but the *images* must be swapped for real plumbing jobs (repipe, tankless, sewer dig, rough-in)
+- [ ] **Under-slab leak 3D centerpiece** — phase 2 build (R3F): cutaway of a home's pipe network with a glowing slab leak, dramatizing leak detection (the Vegas angle)
+- [ ] **Trust strip** — add Rooter-Hero-style strip (★ rating · Licensed/Bonded/Insured · No after-hours fees) once real numbers exist
 
 ## Added 2026-06-12 (services/specials/news)
 - [ ] **Real coupon offers + terms** — /specials cards are layout placeholders

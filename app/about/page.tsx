@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Nav, Footer, CallBar, PHONE_DISPLAY, PHONE_TEL, LICENSE } from "@/components/site";
 
 export const metadata: Metadata = {
-  title: "About Us | Plumb Crazy Heating & Cooling — Las Vegas",
+  title: "About Us | Plumb Crazy Plumbing — Las Vegas",
   description:
-    "The full-service Las Vegas HVAC shop with a 24-hour service department. Residential and commercial — complete builds, honest answers, and a Weimaraner on the badge.",
+    "The full-service Las Vegas plumbing shop with a 24-hour service department. Residential and commercial — drains, sewers, water heaters, repipes, honest flat-rate pricing, and a Weimaraner on the badge.",
 };
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
               <span className="deg">ABOUT PLUMB CRAZY</span>
             </span>
             <h1 className="page-title">
-              Crazy about <em className="page-em">comfort.</em>
+              Crazy about <em className="page-em">plumbing.</em>
             </h1>
             <p className="lede">
               {/* PLACEHOLDER founding story — replace with the client's real history, founders, years in business */}
@@ -35,7 +35,7 @@ export default function About() {
             <div className="about-card">
               <img
                 src="/plumb-crazy-badge.png"
-                alt="The Plumb Crazy badge — a Weimaraner proudly holding a smart thermostat"
+                alt="The Plumb Crazy badge — a proud Weimaraner mascot"
                 className="about-badge"
               />
             </div>
@@ -47,20 +47,20 @@ export default function About() {
                 One shop. <em>Whole valley.</em>
               </h2>
               <p className="lede">
-                Plumb Crazy Heating &amp; Cooling is a full-service HVAC
-                company serving the Las Vegas valley — homes on one side of the
-                ledger, commercial properties on the other, and a service
-                department that never closes in between.
+                Plumb Crazy Plumbing is a full-service plumbing company serving
+                the Las Vegas valley — homes on one side of the ledger,
+                commercial properties on the other, and a service department
+                that never closes in between.
               </p>
               <p className="lede">
-                We design and build complete systems from scratch, keep old
-                ones running honestly, and tell you the truth about which of
-                those two things you actually need. Vegas runs on reputation;
-                ours rides on every job.
+                We clear the drains, camera the sewers, swap the water heaters,
+                find the slab leaks, and repipe the houses that need it — and we
+                tell you the truth about which of those you actually need. Vegas
+                runs on reputation; ours rides on every job.
               </p>
               <p className="lede">
-                And yes — that&apos;s our dog on the badge, and yes, the
-                thermostat says 68°. Some things are worth being crazy about.
+                And yes — that&apos;s our dog on the badge. Some things are
+                worth being plumb crazy about.
               </p>
             </div>
           </div>
@@ -89,13 +89,13 @@ export default function About() {
               </div>
               <div className="why">
                 <span className="n">03</span>
-                <h3>Our own techs</h3>
-                <p>The people who quote the job do the job. We don&apos;t sub out the parts that matter.</p>
+                <h3>Flat-rate pricing</h3>
+                <p>You approve the price before we turn a wrench. No hourly meter, no surprise number at the end.</p>
               </div>
               <div className="why">
                 <span className="n">04</span>
-                <h3>Straight numbers</h3>
-                <p>Written quotes, honest diagnosis, and zero commission-chasing upsells.</p>
+                <h3>Our own plumbers</h3>
+                <p>The people who quote the job do the job. We don&apos;t sub out the parts that matter.</p>
               </div>
             </div>
           </div>

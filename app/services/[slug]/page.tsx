@@ -22,7 +22,7 @@ export async function generateMetadata({
   const svc = getService(slug);
   if (!svc) return {};
   return {
-    title: `${svc.title} ${svc.titleAccent.replace(".", "")} — Las Vegas | Plumb Crazy Heating & Cooling`,
+    title: `${svc.title} ${svc.titleAccent.replace(".", "")} — Las Vegas | Plumb Crazy Plumbing`,
     description: svc.intro,
   };
 }

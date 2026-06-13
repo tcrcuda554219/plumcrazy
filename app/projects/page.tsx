@@ -2,37 +2,38 @@ import type { Metadata } from "next";
 import { Nav, Footer, CallBar, PHONE_DISPLAY, PHONE_TEL } from "@/components/site";
 
 export const metadata: Metadata = {
-  title: "Projects — Residential & Commercial | Plumb Crazy Heating & Cooling",
+  title: "Projects — Residential & Commercial | Plumb Crazy Plumbing",
   description:
-    "Recent residential and commercial HVAC work across the Las Vegas valley — complete system installs, rooftop units, ductwork, and full build-outs.",
+    "Recent residential and commercial plumbing work across the Las Vegas valley — repipes, water heater installs, sewer line repairs, and commercial drain build-outs.",
 };
 
-/* PLACEHOLDER GALLERY — current images are brand visuals standing in
-   until the client supplies real job-site photos. See PLACEHOLDERS.md. */
+/* PLACEHOLDER GALLERY — current images are HVAC stand-ins from the prior
+   build and MUST be swapped for real plumbing job-site photos before launch.
+   See PLACEHOLDERS.md. */
 
 const residential = [
   {
     src: "/projects/res-install.jpg",
-    title: "Complete condenser install",
-    blurb: "Full residential system — sized, set, and commissioned.",
+    title: "Tankless water heater install",
+    blurb: "Endless hot water — sized to the home and code-compliant. (Placeholder image — swap for real job photo.)",
   },
   {
     src: "/projects/res-complete.jpg",
-    title: "System startup & balance",
-    blurb: "Dialed in and verified at the unit, not guessed from the truck.",
+    title: "Whole-home repipe",
+    blurb: "Old galvanized out, PEX in — pressure-tested before the walls closed. (Placeholder image — swap for real job photo.)",
   },
 ];
 
 const commercial = [
   {
     src: "/projects/com-rtu.jpg",
-    title: "Rooftop package unit",
-    blurb: "Commercial RTU set on curb — craned, connected, commissioned.",
+    title: "Commercial sewer line repair",
+    blurb: "Camera-located break, trenchless repair, minimal disruption. (Placeholder image — swap for real job photo.)",
   },
   {
     src: "/projects/com-ductwork.jpg",
-    title: "Plenum & duct build-out",
-    blurb: "Full trunk-and-branch airways for a commercial tenant improvement.",
+    title: "Tenant build-out rough-in",
+    blurb: "Full supply and drain rough-in for a commercial tenant improvement. (Placeholder image — swap for real job photo.)",
   },
 ];
 
@@ -59,7 +60,7 @@ export default function Projects() {
         <section className="gallery-block" id="residential">
           <div className="wrap">
             <span className="tag cool">
-              <span className="deg">RESIDENTIAL · 68°F</span>
+              <span className="deg">RESIDENTIAL · WHOLE-HOME</span>
             </span>
             <h2>
               Homes, <span className="ice">handled.</span>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Nav, Footer, CallBar, PHONE_DISPLAY, PHONE_TEL } from "@/components/site";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Plumb Crazy Heating & Cooling — Las Vegas",
+  title: "Contact Us | Plumb Crazy Plumbing — Las Vegas",
   description:
-    "Book service, request a commercial bid, or reach the 24-hour emergency line. Plumb Crazy Heating & Cooling — Las Vegas, NV.",
+    "Book a plumber, request a commercial bid, or reach the 24-hour emergency line. Plumb Crazy Plumbing — Las Vegas, NV.",
 };
 
 export default function Contact() {
@@ -54,11 +54,13 @@ export default function Contact() {
                     <option value="" disabled>
                       Choose one…
                     </option>
-                    <option>AC repair</option>
-                    <option>Heating repair</option>
-                    <option>New system / replacement quote</option>
+                    <option>Drain cleaning / clog</option>
+                    <option>Sewer line / camera inspection</option>
+                    <option>Water heater repair or replacement</option>
+                    <option>Leak detection / slab leak</option>
+                    <option>Repiping / pipe repair</option>
+                    <option>Water treatment / softener</option>
                     <option>Commercial bid</option>
-                    <option>Maintenance plan</option>
                     <option>Emergency — call instead!</option>
                   </select>
                 </label>
@@ -67,7 +69,7 @@ export default function Contact() {
                   <textarea
                     name="message"
                     rows={4}
-                    placeholder="Dead AC upstairs, weird noise, new build, etc."
+                    placeholder="Clogged main line, no hot water, leak under the slab, etc."
                   />
                 </label>
                 {/* PLACEHOLDER: online booking wires to scheduling/CRM at launch */}
