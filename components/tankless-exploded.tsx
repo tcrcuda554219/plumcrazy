@@ -11,6 +11,7 @@
 
 import { useRef, useMemo, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 import { PHONE_TEL, PHONE_DISPLAY } from "@/components/site";
 
@@ -113,12 +114,7 @@ function Model({
     }
     if (burnerMat.current) burnerMat.current.emissiveIntensity = fire * 2.2;
     if (coilMat.current) coilMat.current.emissiveIntensity = fire * 0.9;
-
-    // gentle idle turn for life; scroll adds a little reveal rotation
-    if (group.current) {
-      const idle = reduced ? 0 : state.clock.elapsedTime * 0.12;
-      group.current.rotation.y = idle + amt * 0.5 - 0.25;
-    }
+    // no auto-rotation — the view is the user's to drag (OrbitControls)
   });
 
   return (
@@ -206,6 +202,17 @@ function Stage({
       <directionalLight position={[4, 6, 5]} intensity={0.9} />
       <directionalLight position={[-5, 2, -2]} intensity={0.3} color={WATER} />
       <Model progressRef={progressRef} reduced={reduced} />
+      <OrbitControls
+        makeDefault
+        enablePan={false}
+        enableZoom={false}
+        enableDamping
+        dampingFactor={0.08}
+        rotateSpeed={0.9}
+        target={[0, 0, 0]}
+        minPolarAngle={Math.PI / 6}
+        maxPolarAngle={Math.PI - Math.PI / 6}
+      />
     </Canvas>
   );
 }
@@ -284,7 +291,7 @@ export default function TanklessExploded() {
               ) : (
                 <div className="tankless-fallback" />
               )}
-              <span className="tk-cap">Scroll to take it apart</span>
+              <span className="tk-cap">Drag to orbit · scroll to take it apart</span>
             </div>
           </div>
         </div>
