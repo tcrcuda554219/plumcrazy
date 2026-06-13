@@ -18,8 +18,8 @@ export function Nav() {
       <div className="nav-in">
         <a className="logo" href="/">
           <img
-            src="/plumb-crazy-badge.png"
-            alt="Plumb Crazy Plumbing badge — Weimaraner mascot"
+            src="/plumb-crazy-logo.png"
+            alt="Plumb Crazy Plumbing Solutions logo"
             className="logo-badge"
             width={46}
             height={46}
@@ -74,8 +74,8 @@ export function Footer() {
           <div>
             <a className="logo" href="/">
               <img
-                src="/plumb-crazy-badge.png"
-                alt="Plumb Crazy Plumbing badge"
+                src="/plumb-crazy-logo.png"
+                alt="Plumb Crazy Plumbing Solutions logo"
                 className="logo-badge logo-badge-lg"
                 width={72}
                 height={72}

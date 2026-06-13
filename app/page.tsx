@@ -8,6 +8,7 @@ import {
   OFFER_FINE,
   FINANCING_LINE,
 } from "@/components/site";
+import LeakShowcase from "@/components/leak-showcase";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Lanes />
         <hr className="seam" />
         <Services />
+        <LeakShowcase />
         <Why />
         <hr className="seam" />
         <Process />

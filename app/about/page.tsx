@@ -34,8 +34,8 @@ export default function About() {
           <div className="wrap about-grid">
             <div className="about-card">
               <img
-                src="/plumb-crazy-badge.png"
-                alt="The Plumb Crazy badge — a proud Weimaraner mascot"
+                src="/plumb-crazy-logo.png"
+                alt="The Plumb Crazy Plumbing Solutions logo — a Weimaraner holding a pipe wrench, ringed by chrome pipe"
                 className="about-badge"
               />
             </div>
